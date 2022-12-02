@@ -10,11 +10,9 @@
   - 2.2 - [Construction de Jupyter](#2-2)
   - 2.3 - [Démarrer Jupyter](#2-3)
 - 3 - [Jupyter - Utilisation](#3)
-  - 3.1 - [Création et utilisation d'un **Notebook**](#3-1)
-    - 3.1.1 - [Qu'est-ce qu'un Notebook dans Jupyter](#3-1-1)
-    - 3.1.2 - [Exemple de création et de lecture d'un fichier Notebook](#3-1-2)
-    - 3.1.3 - [Exemple d'exécution d'un fichier Notebook](#3-1-3)
-  - 3.2 - [Notebook disponibles](#3-2)
+  - 3.1 - [Qu'est-ce qu'un Notebook dans Jupyter](#3-1)
+  - 3.2 - [Exemple de création et de lecture d'un fichier Notebook](#3-2)
+  - 3.3 - [Exemple d'exécution d'un fichier Notebook](#3-3)
 - 4 - [Travaux pratiques](#4)
 - 4.1 - [TP - Titanic](#4-1)
 - 4.2 - [TP - Banque](#4-2)
@@ -67,30 +65,19 @@ Ouvrir normalement automatique une page web : http://localhost:8888/lab.
 
 ## 3 - Jupyter - Utilisation - [Haut de page](#top) <a name="3"></a>
 
-## 3.1 - Création et utilisation d'un **Notebook** - [Haut de page](#top) <a name="3-1"></a>
-
-### 3.1.1 - Qu'est-ce qu'un Notebook dans Jupyter - [Haut de page](#top) <a name="3-1-1"></a>
+### 3.1 - Qu'est-ce qu'un Notebook dans Jupyter - [Haut de page](#top) <a name="3-1-1"></a>
 
 Un document Jupyter Notebook est un document JSON. Il suit un schéma contenant une liste ordonnée de cellules d'entrée/sortie. Celles-ci peuvent contenir du code, du texte (à l'aide de Markdown), des formules mathématiques, des graphiques et des médias interactifs. Ce document se termine généralement par l'extension ".ipynb".
 
 [Source - wiki](https://fr.wikipedia.org/wiki/Jupyter#Jupyter_Notebook)
 
-### 3.1.2 - Exemple de création et de lecture d'un fichier Notebook - [Haut de page](#top) <a name="3-1-2"></a>
+### 3.2 - Exemple de création et de lecture d'un fichier Notebook - [Haut de page](#top) <a name="3-2"></a>
 
 ![model_notebook](_img/002.png)
 
-> Fichier de démo --> [**notebook_001.ipynb**](notebook_001.ipynb)
-
-### 3.1.3 - Exemple d'exécution d'un fichier Notebook - [Haut de page](#top) <a name="3-1-3"></a>
+### 3.3 - Exemple d'exécution d'un fichier Notebook - [Haut de page](#top) <a name="3-3"></a>
 
 ![model_notebook](_img/003.png)
-
-> Fichier de démo --> [**notebook_001.ipynb**](notebook_001.ipynb)
-
-## 3.2 - Notebook disponibles - [Haut de page](#top) <a name="3-2"></a>
-
-1. [**notebook_001.ipynb**](notebook_001.ipynb)
-2. [**notebook_002.ipynb**](notebook_002.ipynb)
 
 ## 4 - Travaux pratiques - [Haut de page](#top) <a name="4"></a>
 
