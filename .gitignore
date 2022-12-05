@@ -32,3 +32,6 @@
 # BDD & Migrations
 **/*.db
 **migrations
+
+# Notebook
+**/output
