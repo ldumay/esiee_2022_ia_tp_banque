@@ -1,5 +1,34 @@
-*.idea/
-*venv/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# IDE
+**.idea
+**.vscode
+
+# Dependencies
+**venv
+**__pycache__
 *.ipynb_checkpoints/
-/output
-notebook_002.ipynb
+**node_modules
+**/package-lock.json
+**.pnp
+**.pnp.js
+
+# Testing
+**coverage
+
+# Production
+**build
+
+# Misc
+**.DS_Store
+**.env.local
+**.env.*.local
+
+# Logs
+**npm-debug.log*
+**yarn-debug.log*
+**yarn-error.log*
+
+# BDD & Migrations
+**/*.db
+**migrations
