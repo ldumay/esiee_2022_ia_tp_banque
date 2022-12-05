@@ -27,7 +27,7 @@ def sample_methodes():
     if request.method=='GET':
         return "Cette méthode est un GET 😉👌"
     elif request.method=='POST':
-        return " Cette méthode est un GET 😉👌"
+        return " Cette méthode est un POST 😉👌"
     elif request.method=='PUT':
         return " Cette méthode est un PUT 😉👌"
     elif request.method=='DELETE':
