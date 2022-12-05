@@ -1,5 +1,12 @@
 
 - [https://pycaret.org/](https://pycaret.org/)
+- https://pycaret.gitbook.io/docs/get-started/installation
+
+- PyCaret is tested and supported on the following 64-bit systems:
+  - Python 3.6 – 3.8
+  - Python 3.9 for Ubuntu only
+  - Ubuntu 16.04 or later
+  - Windows 7 or later
 
 ```
 pip install pycaret
