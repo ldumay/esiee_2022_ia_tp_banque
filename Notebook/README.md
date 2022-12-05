@@ -5,7 +5,7 @@
 Ici, nous effectuons des recherches de données dans le but de trouver un modèle de données pertinent selon le type de données reçu et la cible de sortie. Afin d'effectuer cela, on utilise [**Jupyter - Lab**](https://jupyter.org/).
 
 <a href="https://jupyter.org/">
-<img max-width="100px" src="https://jupyter.org/assets/homepage/main-logo.svg"/>
+<img width="100px" src="https://jupyter.org/assets/homepage/main-logo.svg"/>
 </a>
 
 ## Sommaire
@@ -36,6 +36,15 @@ De plus, selon le fichier **requirements.txt**, il est nécessaire de disposer d
 
 #### 2.1.1 - Préparation de l'environnement - [Haut de page](#top) <a name="2-1-1"></a>
 
+**Attention**, cela s'applique pour les cas où l'environnement **venv** n'a pas été créé. Si le dossier **venv** existe déjà, les commandes ci-dessous ne sont pas nécessaires.
+
+Que ce soit sur Windows ou MacOS, il est nécessaire :
+
+- de vérifier que le gestionnaire de dépendances soit à jour ▶ **pip**
+- de créer l'environnement ▶ **venv**
+- d'activer l'environnement ▶ **activate**
+- d'installer les dépendances requis ▶ **requirements.txt**
+
 **A.1 - Installation sur MacOS :**
 
 ```
@@ -58,15 +67,30 @@ pip install -r requirements.txt
 
 **B - Construction de Jupyter :**
 
+Avant de pouvoir utiliser le **Jupyter - Lab**, il est nécessaire de construire le construire si ce n'est pas le cas.
+
 ```
 jupyter lab build
 ```
 
 #### 2.1.2 -  Démarrer Jupyter - [Haut de page](#top) <a name="2-1-2"></a>
 
+Pour démarrer le **Jupyter - Lab**, voici la commande ci-dessous :
+
 ```
 jupyter-lab
 ```
+
+> **NB** :
+> 
+> - Pensez à activer le **venv** :
+>   - Mac / Linux / WSL : `source venv/bin/activate`
+>   - Windows - CMD : 
+>       - Par défaut : `. ./venv/Scripts/activate`
+>       - Via CMD : `venv/Scripts/activate.bat`
+>       - Via PS : `venv/Scripts/Activate.ps1`
+> - Si vous avez besoin de quitter le venv pour retourner à une utilisation global :
+> `deactivate`
 
 Ouvrir normalement automatique une page web : http://localhost:8888/lab.
 
