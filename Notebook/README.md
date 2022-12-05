@@ -1,6 +1,12 @@
-# **Section - AI** <a name="top"></a>
+# **Section - Recherche de données** <a name="top"></a>
 
 [Retour à l'accueil](../../../)
+
+Ici, nous effectuons des recherches de données dans le but de trouver un modèle de données pertinent selon le type de données reçu et la cible de sortie. Afin d'effectuer cela, on utilise [**Jupyter - Lab**](https://jupyter.org/).
+
+<a href="https://jupyter.org/">
+<img max-width="100px" src="https://jupyter.org/assets/homepage/main-logo.svg"/>
+</a>
 
 ## Sommaire
 
