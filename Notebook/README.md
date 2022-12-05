@@ -11,30 +11,32 @@ Ici, nous effectuons des recherches de données dans le but de trouver un modèl
 ## Sommaire
 
 - 1 - [Pré-requis](#1)
-- 2 - [Installation de Jupyter](#2)
-  - 2.1 - [Préparation de l'environement](#2-1)
-    - 2.1.1 - [MacOS](#2-1-1)
-    - 2.1.2 - [Windows](#2-2-1)
-  - 2.2 - [Construction de Jupyter](#2-2)
-  - 2.3 - [Démarrer Jupyter](#2-3)
-- 3 - [Jupyter - Utilisation](#3)
-  - 3.1 - [Qu'est-ce qu'un Notebook dans Jupyter](#3-1)
-  - 3.2 - [Exemple de création et de lecture d'un fichier Notebook](#3-2)
-  - 3.3 - [Exemple d'exécution d'un fichier Notebook](#3-3)
-- 4 - [Travaux pratiques](#4)
-- 4.1 - [TP - Titanic](#4-1)
-- 4.2 - [TP - Banque](#4-2)
-- 4.2.1 - [Sujet du projet](#4-2-1)
+- 2 - [Jupyter](#2)
+  - 2.1 - [Installation de Jupyter](#2-1)
+    - 2.1.1 - [Préparation de l'environnement](#2-1-1)
+    - 2.1.2 - [ Démarrer Jupyter](#2-1-2)
+  - 2.2 - [Utilisation de Jupyter](#2-2)
+    - 2.2.1 - [Qu'est-ce qu'un Notebook dans Jupyter](#2-2-1)
+    - 2.2.2 - [Exemple de création et de lecture d'un fichier Notebook](#2-2-2)
+    - 2.2.3 - [Exemple d'exécution d'un fichier Notebook](#2-2-3)
+- 3 - [Travaux pratiques](#3)
+  - 3.1 - [TP - Titanic](#3-1)
+  - 3.2 - [TP - Banque](#3-2)
+    - 3.2.1 - [Sujet du projet](#3-2-1)
 
 ## 1 - Pré-requis - [Haut de page](#top) <a name="1"></a>
 
-- Python : **>=3.7** - **<3.11**
+Pour pouvoir utiliser ou installer **Jupyter - Lab**, le dépôt dispose d'un fichier nommer **requirements.txt** constituer des dépendances essentiels à son bon fonctionnement.
 
-## 2 - Installation de Jupyter - [Haut de page](#top) <a name="2"></a>
+De plus, selon le fichier **requirements.txt**, il est nécessaire de disposer d'un version de Python comprise entre **>=3.7** - **<3.11**.
 
-### 2.1 - Préparation de l'environement - [Haut de page](#top) <a name="2-1"></a>
+## 2 - Jupyter - [Haut de page](#top) <a name="2"></a>
 
-#### 2.1.1 - MacOS - [Haut de page](#top) <a name="2-1-1"></a>
+### 2.1 - Installation de Jupyter - [Haut de page](#top) <a name="2-1"></a>
+
+#### 2.1.1 - Préparation de l'environnement - [Haut de page](#top) <a name="2-1-1"></a>
+
+**A.1 - Installation sur MacOS :**
 
 ```
 python3 -m pip install --upgrade pip
@@ -43,7 +45,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 2.1.2 - Windows - [Haut de page](#top) <a name="2-1-2"></a>
+**A.2 - Installation sur Windows :**
 
 ```
 python -m pip install --upgrade pip
@@ -54,13 +56,13 @@ pip install -r requirements.txt
 
 > Si besoin : [source de jupyter](https://jupyter.org/install)
 
-### 2.2 - Construction de Jupyter - [Haut de page](#top) <a name="2-2"></a>
+**B - Construction de Jupyter :**
 
 ```
 jupyter lab build
 ```
 
-### 2.3 - Démarrer Jupyter - [Haut de page](#top) <a name="2-3"></a>
+#### 2.1.2 -  Démarrer Jupyter - [Haut de page](#top) <a name="2-1-2"></a>
 
 ```
 jupyter-lab
@@ -70,25 +72,25 @@ Ouvrir normalement automatique une page web : http://localhost:8888/lab.
 
 ![image](_img/001.png)
 
-## 3 - Jupyter - Utilisation - [Haut de page](#top) <a name="3"></a>
+### 2.2 - Utilisation de Jupyter - [Haut de page](#top) <a name="2-2"></a>
 
-### 3.1 - Qu'est-ce qu'un Notebook dans Jupyter - [Haut de page](#top) <a name="3-1-1"></a>
+#### 2.2.1 - Qu'est-ce qu'un Notebook dans Jupyter - [Haut de page](#top) <a name="2-2-1"></a>
 
 Un document Jupyter Notebook est un document JSON. Il suit un schéma contenant une liste ordonnée de cellules d'entrée/sortie. Celles-ci peuvent contenir du code, du texte (à l'aide de Markdown), des formules mathématiques, des graphiques et des médias interactifs. Ce document se termine généralement par l'extension ".ipynb".
 
 [Source - wiki](https://fr.wikipedia.org/wiki/Jupyter#Jupyter_Notebook)
 
-### 3.2 - Exemple de création et de lecture d'un fichier Notebook - [Haut de page](#top) <a name="3-2"></a>
+#### 2.2.2 - Exemple de création et de lecture d'un fichier Notebook - [Haut de page](#top) <a name="2-2-2"></a>
 
 ![model_notebook](_img/002.png)
 
-### 3.3 - Exemple d'exécution d'un fichier Notebook - [Haut de page](#top) <a name="3-3"></a>
+#### 2.2.3 - Exemple d'exécution d'un fichier Notebook - [Haut de page](#top) <a name="2-2-3"></a>
 
 ![model_notebook](_img/003.png)
 
-## 4 - Travaux pratiques - [Haut de page](#top) <a name="4"></a>
+## 3 - Travaux pratiques - [Haut de page](#top) <a name="3"></a>
 
-### 4.1 - TP - Titanic - [Haut de page](#top) <a name="4-1"></a>
+### 3.1 - TP - Titanic - [Haut de page](#top) <a name="3-1"></a>
 
 Exemple d'étude de données réaliser en cours.
 
@@ -100,9 +102,9 @@ Exemple d'étude de données réaliser en cours.
     - [titanic/test.csv](/datas/titanic/test.csv)
     - [titanic/train.csv](/datas/titanic/train.csv)
   
-### 4.2 - TP - Banque - [Haut de page](#top) <a name="4-2"></a>
+### 3.2 - TP - Banque - [Haut de page](#top) <a name="3-2"></a>
 
-#### 4.2.1 - Sujet du projet - [Haut de page](#top) <a name="4-2-1"></a>
+#### 3.2.1 - Sujet du projet - [Haut de page](#top) <a name="3-2-1"></a>
 
 Prédire un accord de prêt bancaire
 
