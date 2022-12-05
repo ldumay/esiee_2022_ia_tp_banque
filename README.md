@@ -20,7 +20,7 @@
 
 ## 1 - Pré-requis - [Haut de page](#top) <a name="1"></a>
 
-- Python 3
+- Python : **>=3.7** - **<3.11**
 - Jupyter-Lab
 
 ## 2 - Installation de Jupyter - [Haut de page](#top) <a name="2"></a>
