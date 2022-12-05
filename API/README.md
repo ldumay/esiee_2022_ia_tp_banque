@@ -74,7 +74,15 @@ python -m pip install -r requirements.txt
 > python -m pip freeze > requirements.txt
 > ```
 
-#### 2.4 - Lancer l'application backend python avec flask
+#### 2.4 - Sortir du venv
+
+Si vous avez besoin de quitter le venv pour retourner à une utilisation global
+
+> `deactivate`
+
+### 3 - Accès à API
+
+#### 3.1 - Lancer l'application backend python avec flask
 
 ```
 python -m flask run
@@ -92,11 +100,9 @@ Changer dans `app.py`
 ```
 python app.py
 ```
+ ### 3.2 Point d'accès de l'API
 
-### 3 - Accès à API
-
-**TODO**
-
+ **TODO**
 
 ---[Recherches]---
 
