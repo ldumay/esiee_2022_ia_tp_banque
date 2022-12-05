@@ -21,7 +21,7 @@ Ici, nous effectuons le traitement de données par API dans le but d'afficher un
 
 Pour pouvoir utiliser ou installer **Flask**, le dépôt dispose d'un fichier nommer **requirements.txt** constituer des dépendances essentiels à son bon fonctionnement.
 
-De plus, selon le fichier **requirements.txt**, il est nécessaire de disposer de la version **3.10.7** de Python ou ultérieure.
+De plus, selon le fichier **requirements.txt**, il est nécessaire de disposer de la version **3.10** de Python ou ultérieure.
 
 ### 2 - Préparation de l'environnement - [Haut de page](#top) <a name="2"></a>
 
