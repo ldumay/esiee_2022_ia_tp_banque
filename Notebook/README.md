@@ -1,6 +1,6 @@
 # **Section - AI** <a name="top"></a>
 
-[Retour à l'accueil](../../)
+[Retour à l'accueil](../../../)
 
 ## Sommaire
 
