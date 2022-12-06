@@ -12,7 +12,8 @@ Ici, nous effectuons un test de PyCaret avec Jupyter.
 
 - 1 - [Pré-requis](#1)
 - 2 - [Préparation de l'environnement](#2)
-- 3 - [Sources](#3)
+- 3 - [Démarrer Jupyter](#3)
+- 4 - [Sources](#4)
 
 ### 1 - Pré-requis - [Haut de page](#top) <a name="1"></a>
 
@@ -57,7 +58,26 @@ Avant de pouvoir utiliser le **Jupyter - Lab**, il est nécessaire de construire
 jupyter lab build
 ```
 
-### 3 - Sources - [Haut de page](#top) <a name="3"></a>
+### 3 - Démarrer Jupyter - [Haut de page](#top) <a name="3"></a>
+
+Pour démarrer le **Jupyter - Lab**, voici la commande ci-dessous :
+
+```
+jupyter-lab
+```
+
+> **NB** :
+> 
+> - Pensez à activer le **venv** :
+>   - Mac / Linux / WSL : `source venv/bin/activate`
+>   - Windows - CMD : 
+>       - Par défaut : `. ./venv/Scripts/activate`
+>       - Via CMD : `venv/Scripts/activate.bat`
+>       - Via PS : `venv/Scripts/Activate.ps1`
+> - Si vous avez besoin de quitter le venv pour retourner à une utilisation global :
+> `deactivate`
+
+### 4 - Sources - [Haut de page](#top) <a name="4"></a>
 
 - Sources :
   - [https://pycaret.org/](https://pycaret.org/)
