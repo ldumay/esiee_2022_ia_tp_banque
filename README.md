@@ -7,3 +7,7 @@ Celui-ci, intègre :
   - [▶ Disponible ici ◀](/Notebook/README.md)
 - une partie **API de traitement de données** utilisant **Flask** :
   - [▶ Disponible ici ◀](/API/README.md)
+
+Autre :
+- **PyCaret** :
+  - [▶ Disponible ici ◀](/Pycaret/README.md)
