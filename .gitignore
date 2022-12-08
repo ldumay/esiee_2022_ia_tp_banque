@@ -37,3 +37,6 @@
 
 # Notebook
 **/output
+
+# Pickle generated files
+*.pkl
