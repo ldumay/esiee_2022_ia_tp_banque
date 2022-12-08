@@ -35,8 +35,9 @@
 **/*.db
 **migrations
 
-# Notebook
+# Jupyter-Lab / Notebook / Pycaret
 **/output
 
-# Pickle generated files
+# Fichiers de rendu de démonstration du Notebook de Pycaret
 *.pkl
+**Dockerfile
