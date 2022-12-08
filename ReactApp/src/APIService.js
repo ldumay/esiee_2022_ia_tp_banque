@@ -1,7 +1,7 @@
 export default class APIService {
 
-	url = "http://localhost"
-	port = 5000
+	static url = "http://localhost"
+	static port = 5000
 
 	/**
 	 * Send data
@@ -10,27 +10,27 @@ export default class APIService {
 	 */
 	static sendData(body) {
 		let result = "";
-		fetch(this.url + ":" + this.port + "/test",
-			{
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-					// 'Access-Control-Allow-Origin' : 'http://192.168.1.24:3000',
-					// 'Access-Control-Allow-Credentials' : true
-				},
-				body: JSON.stringify(body)
+		let url = new URL(this.url + ":" + this.port + "/bank")
+		fetch(url, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				'Access-Control-Allow-Origin': "*",
+				// 'Access-Control-Allow-Credentials' : true
+			},
+			body: JSON.stringify(body)
+		}).then((response) => {
+			response.json().then((jsonValue) => {
+				console.debug(jsonValue);
+				result = jsonValue;
 			})
-			.then((response) => {
-				response.json().then((jsonValue) => {
-					console.debug(jsonValue);
-					result = jsonValue;
-				})
-			}, (rejectMessage) => {
-				console.log(rejectMessage)
-			}).catch((error) => {
-				console.err(error)
-			}).finally(() => {
-			});
+		}, (rejectMessage) => {
+			console.log("Request rejected", rejectMessage)
+		}).catch((error) => {
+			console.err("Request Error", error)
+		}).finally(() => {
+			console.log("Request finish");
+		});
 		return result;
 	}
 }
