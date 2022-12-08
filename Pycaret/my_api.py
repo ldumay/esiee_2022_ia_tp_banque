@@ -13,8 +13,8 @@ app = FastAPI()
 model = load_model("my_api")
 
 # Create input/output pydantic models
-input_model = create_model("my_api_input", **{'age': 63, 'sex': 'male', 'bmi': 31.44499969482422, 'children': 0, 'smoker': 'no', 'region': 'northeast'})
-output_model = create_model("my_api_output", charges_prediction=13974.455)
+input_model = create_model("my_api_input", **{'age': 60, 'sex': 'female', 'bmi': 28.700000762939453, 'children': 1, 'smoker': 'no', 'region': 'southwest'})
+output_model = create_model("my_api_output", charges_prediction=13224.693)
 
 
 # Define predict function
