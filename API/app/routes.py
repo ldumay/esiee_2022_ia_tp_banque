@@ -1,22 +1,30 @@
+# Import
+from flask import request
+import pandas as pd
+from pydantic import create_model
+from pycaret.regression import load_model, predict_model
+
 # Fichier Routes
 from app import app
-from flask import request, redirect
-import jsonpickle
-import numpy as np
-from werkzeug.debug import console
 
 
-# - - - [Test] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - [E] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-@app.route('/testjson', methods=['POST'])
-def home():
-    data = request.get_json()
-    # listData = list(data)
-    if data:
-        for d in data:
-            print(d["heure"], flush=True)
+@app.get('/bank')
+def predict():
+    # get user data
+    user_data = request.get_json()
 
-    return jsonpickle.encode(data)
+    # Load trained Pipeline
+    model = load_model("bank_model")
+
+    # Create input/output pydantic models
+    input_model = create_model("user_input", **{'age': user_data['age'], 'sex': user_data['sex'], 'children': user_data['children']})
+    output_model = create_model("user_output", charges_prediction=13224.693)
+
+    dataFrame = pd.DataFrame([input_model.dict()])
+    predictions = predict_model(model, data=dataFrame)
+    return {"charges_prediction": predictions["prediction_label"].iloc[0]}
 
 
 # - - - [Exemple de gestion de méthodes] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
