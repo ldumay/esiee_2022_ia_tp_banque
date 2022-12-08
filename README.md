@@ -8,6 +8,8 @@ Celui-ci, intègre :
 - une partie **API de traitement de données** utilisant **Flask** :
   - [▶ Disponible ici ◀](/API/README.md)
 
+Nous avons réaliser une présentation PowerPoint décrivant le projet,  disponible [ici](/_docs/Presentation_Artificial_Intelligence.pdf).
+
 Autre :
 - **PyCaret** :
   - [▶ Disponible ici ◀](/Pycaret/README.md)
