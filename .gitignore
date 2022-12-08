@@ -35,5 +35,9 @@
 **/*.db
 **migrations
 
-# Notebook
+# Jupyter-Lab / Notebook / Pycaret
 **/output
+#Fichiers de rendu de démonstration du Notebook de Pycaret
+**my_api.pkl
+**my_api.py
+**my_best_pipeline.pkl
