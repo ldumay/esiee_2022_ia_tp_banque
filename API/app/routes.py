@@ -1,17 +1,19 @@
 # Import
-from flask import request
+from flask import request, jsonify
+from flask_cors import CORS
 import pandas as pd
 from pydantic import create_model
 from pycaret.regression import load_model, predict_model
 
 # Fichier Routes
 from app import app
+CORS(app)
 
+# - - - [Handle request] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# - - - [E] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-@app.get('/bank')
+@app.post('/bank')
 def predict():
+    print("User request made")
     # get user data
     user_data = request.get_json()
 
@@ -19,12 +21,14 @@ def predict():
     model = load_model("bank_model")
 
     # Create input/output pydantic models
-    input_model = create_model("user_input", **{'age': user_data['age'], 'sex': user_data['sex'], 'children': user_data['children']})
+    input_model = create_model("user_input", **{'age': user_data['age'], 'sex': user_data['sex'], 'children': user_data['child']})
     output_model = create_model("user_output", charges_prediction=13224.693)
 
-    dataFrame = pd.DataFrame([input_model.dict()])
+    dataFrame = pd.DataFrame(input_model.dict())
     predictions = predict_model(model, data=dataFrame)
-    return {"charges_prediction": predictions["prediction_label"].iloc[0]}
+    response = jsonify({"charges_prediction": predictions["prediction_label"].iloc[0]})
+    print('res', response)
+    return response
 
 
 # - - - [Exemple de gestion de méthodes] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
