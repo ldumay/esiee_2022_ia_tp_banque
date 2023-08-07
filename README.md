@@ -1,4 +1,4 @@
-# ESIEE - 2022 - Intelligence Artificielle <a name="top"></a>
+# ESIEE-IT - 2022 - Intelligence Artificielle <a name="top"></a>
 
 Ceci est un projet de découverte de l'Intelligence Artificielle créé intégralement en Python.
 
