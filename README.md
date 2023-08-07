@@ -1,5 +1,7 @@
 # ESIEE-IT - 2022 - Intelligence Artificielle <a name="top"></a>
 
+> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/esiee-it_2022_intelligence_articielle_tp_banque](https://github.com/2023-esiee-projectlab/esiee-it_2022_intelligence_articielle_tp_banque)**
+
 Ceci est un projet de découverte de l'Intelligence Artificielle créé intégralement en Python.
 
 ## Présentation PowerPoint du projet
